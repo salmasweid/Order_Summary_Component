@@ -1,0 +1,132 @@
+@font-face {
+    src: url('./fonts/RedHatDisplay-VariableFont_wght.ttf') format('truetype');
+    font-family: 'RedHat';
+}
+
+* {
+    --webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 3.5rem 1.5rem;
+    background-color: hsl(225, 100%, 94%);
+    font-family: 'RedHat';
+}
+
+.card {
+    max-width: 400px;
+    background-color: white;
+    border-radius: 1.5rem;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.title {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.description {
+    padding: 0 1rem;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.price-component {
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color:  hsl(225, 100%, 98%);
+    border-radius: 1rem;
+}
+
+.plan-type {
+    display: flex;
+}
+
+.plan {
+    padding: 0 1rem;
+}
+
+.change-plan {
+    margin-top: 0.7rem;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+}
+
+.plan-title {
+    font-size: 1rem;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.price {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.proceed, .cancel {
+    width: 90%;
+    padding: 0.8rem 0;
+    text-align: center;
+    border-radius: 0.8rem;
+}
+
+.proceed {
+    margin-top: 0.5rem;
+    background-color: hsl(245, 75%, 52%);
+}
+
+.proceed a {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: white;
+}
+
+.proceed a:hover {
+    opacity: 0.5;
+}
+
+.cancel a {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: hsl(224, 23%, 55%);
+}
+
+.cancel a:hover {
+    color: black;
+}
+
+@media (min-width: 450px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
